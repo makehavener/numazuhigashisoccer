@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>沼津東高校サッカー部</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>沼津東高校サッカー部</h1>
+
+    <p>
+	　静岡県立沼津東高校サッカー部です。私たちは【文武一流】を理念に掲げ、東部地区の公立高校として県大会ベスト8以上を目指し、日々挑戦を続けています。多くの生徒が難関の大学を目指していますが、サッカーにも妥協することなく、全力で取り組んでいます。また、生徒主体でチーム運営を行い、サッカーに対しても学び続ける力を発揮して、新しい部活動の形に挑戦しています。
+    </p>
+
+    <hr>
+
+    <h2>▶人数</h2>
+    <p>
+	・１年生は選手15人、マネージャー1人、<br>
+	・２年生は選手18人、マネージャー1人<br>
+	の35名で活動しています。<br>
+	　Jクラブの下部組織出身の選手から公立中学校の部活動出身の選手まで、幅広い経歴の選手が活躍しています。	　
+　　　
+　　	　　　
+　　<h2>▶顧問の紹介</h2>
+    <p>
+	＜増山大介先生＞<br>
+	　沼津東高ー東京学芸大から教員の道に。農業経営高、下田北高、沼津工業高などを経て、4年前に母校に赴任。選手時代のポジションはゴールキーパー。教員になった後も社会人リーグの芙蓉クラブでプレーし、国体成年男子の県代表として2001年宮城国体の優勝に貢献した。2002年、29歳の時に「現職教員派遣制度」を利用し、青年海外協力隊の体育指導者として2年間パラグアイに。現地の教員養成に尽力しつつ、パラナ州1部リーグのチームなどでプレーした。<br>
+（https://www.at-s.com/shizusaka/article/ats/1682371.htmlから引用）
+    </p>
+
+
+　
+<h2>▶活動日</h2>
+<p>
+	　平日　主に火~金曜　トレーニング　＠東グラウンド<br>
+	　月曜日はオフのことが多いです。<br>
+	　土日・祝　練習試合・公式戦等あり<br>
+	　活動予定はこちらから確認できます。<br>
+<br>
+    <a href="https://calendar.google.com/calendar/u/1/newembed?color=%239a9cff&src=daisukemas@yahoo.co.jp&csspa=1" target="_blank">
+	【活動予定（Googleカレンダー）】
+    </a>
+　<h2>▶活動の様子</h2>
+    <p>
+	　＜リーグ戦＞<br>
+	　　TOPチーム　静岡県東部Aリーグ<br>
+	　　2ndチーム　静岡県東部Cリーグ<br>
+	　＜過去の実績＞<br>
+	　　2025　静岡県東部Dリーグ　優勝<br>
+	　　2024　高校総体東部大会　優勝
+
+
+<section id="gallery">
+  
+<hr>
+
+<h2>フォトギャラリー</h2>
+
+  <div class="slider">
+    <img src="images/bannnann.jpg" class="slide active">
+    <img src="images/fujihigashi.jpg" class="slide">
+    <img src="images/pksen.jpg" class="slide">
+    <img src="images/secondenjin.jpg" class="slide">
+    <img src="images/komuro.jpg" class="slide">
+    <img src="images/kickoff.jpg" class="slide">
+    <img src="images/secondsyuugou.jpg" class="slide">
+    <img src="images/pkryuu.jpg" class="slide">
+    <img src="images/reon.jpg" class="slide">
+    <img src="images/banntou.jpg" class="slide">
+  </div>
+
+  <button onclick="prevSlide()">◀</button>
+  <button onclick="nextSlide()">▶</button>
+</section>
+
+    <h2>▶SNS</h2>
+    <p>
+	　試合結果や練習試合の様子等を配信しています。是非フォローよろしくお願いします！<br>
+	<br>
+        <a href="https://www.instagram.com/numazuhigashi.soccer?igsh=OGk4bmZ2cnc0eHFm/" target="_blank">
+	【Instagramはこちら】<br>
+        </a>
+ 	<a href="https://x.com/numazuhigashifc" target="_blank">
+	【Xはこちら】
+	</a>
+
+	　
+</p>
+<hr>
+	<h2>▶相談フォーム</h2>
+	<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfZ6v5_13gGHgZ91vXm_BDpJ3R6zJlu5gAywL-f6tLyRAUZDA/viewform?embedded=true" width="640" height="1061" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+
+<script>
+let currentSlide = 0;
+const slides = document.querySelectorAll(".slide");
+
+function showSlide(index) {
+  slides.forEach(slide => slide.classList.remove("active"));
+  slides[index].classList.add("active");
+}
+
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % slides.length;
+  showSlide(currentSlide);
+}
+
+function prevSlide() {
+  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+  showSlide(currentSlide);
+}
+
+setInterval(nextSlide, 3000);
+</script>
+</body>
+</html>

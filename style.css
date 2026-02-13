@@ -1,0 +1,115 @@
+/* ===== 全体 ===== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+    font-size: 16px;
+    background-color: #f5f6fa;
+    color: #333;
+    text-align: left; /* 基本は左寄せ */
+}
+
+/* ===== ヘッダー ===== */
+header {
+    background-color: #0a3d62;
+    color: white;
+    padding: 20px;
+}
+
+/* h1だけ中央 */
+h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 22px;
+}
+
+/* ===== ナビ ===== */
+nav {
+    margin-top: 15px;
+    text-align: left; /* ナビは左 */
+}
+
+    nav a {
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        margin-right: 15px;
+        font-size: 14px;
+    }
+
+/* ===== セクション ===== */
+section {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 8px;
+}
+
+/* 見出し */
+h2 {
+    margin-top: 0;
+    color: #0a3d62;
+}
+
+/* ===== 画像・フォーム ===== */
+img,
+iframe {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+/* ===== フッター ===== */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+/* ===== スライダー（フェード対応） ===== */
+.slider {
+    position: relative;
+    max-width: 600px;
+    height: 350px; /* 高さは好きに調整OK */
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out; /* ← ふわっと */
+}
+
+    .slide.active {
+        opacity: 1;
+    }
+
+/* スライダーボタン */
+.slider-buttons {
+    text-align: center;
+    margin-top: 10px;
+}
+
+    .slider-buttons button {
+        padding: 8px 15px;
+        margin: 5px;
+        font-size: 14px;
+        cursor: pointer;
+        border: none;
+        background-color: #0a3d62;
+        color: white;
+        border-radius: 5px;
+    }
